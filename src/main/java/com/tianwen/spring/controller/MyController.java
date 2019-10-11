@@ -18,8 +18,6 @@ public class MyController {
     @Autowired
     private MyService myService;
 
-//    @PostMapping(value = "/method1")
-//    public MyResult method1(@RequestBody MyParam myParam) {
     @GetMapping(value = "/method1")
     public MyResult method1() {
         return myService.method1();
